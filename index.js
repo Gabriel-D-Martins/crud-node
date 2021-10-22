@@ -20,7 +20,7 @@ server.post('/games', (req, res) => {
     
     for(let i = 0; i <= games.length; i++){
         if(name === games[i]){
-            return res.status(400).json({error: 'Você já inseriu este jogo'})
+            return res.status(400).json({error: 'Você já inseriu este jogo em sua lista'})
         }
     }
 
